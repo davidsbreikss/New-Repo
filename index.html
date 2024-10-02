@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>October site</title>
+    <link rel="style" href="styles.css">
     <style>
         nav {
             color: blue;
@@ -24,9 +25,13 @@
         }
 
         img {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
+            max-width: 25%;
+            /* Allow image to shrink to fit the container's width */
+            max-height: 25vh;
+            /* Allow image to shrink to fit the viewport height */
+            width: auto;
+            /* Maintain the image's aspect ratio */
+            height: auto;
         }
     </style>
 </head>
